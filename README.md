@@ -25,3 +25,14 @@ A simple Python-based tool to analyze the presence of critical HTTP security hea
 1. **Install Dependencies**  
    ```bash
    pip install requests
+2. **Run the Tool**  
+   ```bash
+   python secure_header_check.py
+3. **Example Run** 
+Type a website URL (include https://): https://example.com
+
+Security Header Check for: https://example.com
+--------------------------------------------------
+[+] Content-Security-Policy: ✅ Found
+[-] Strict-Transport-Security: ❌ Missing - Makes sure the website uses HTTPS.
+[-] X-Frame-Options: ❌ Missing - Stops clickjacking tricks.
